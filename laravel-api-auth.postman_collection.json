@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "82fc4d7d-65db-4826-b5a9-390981f4ac54",
+		"name": "laravel-api-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23109071"
+	},
+	"item": [
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2xhcmF2ZWwtYXBpLWp3dC5sb2MvYXBpL3JlZ2lzdHJhdGlvbiIsImlhdCI6MTc0NzIwNzg4NiwiZXhwIjoxNzQ3MjExNDg2LCJuYmYiOjE3NDcyMDc4ODYsImp0aSI6IkJnU0JVcm9TcWdOblA5VHEiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.I3yfxpRjmhJBas7REoCqFON7hxEyo0ZBEhDNu9pz_nQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://laravel-api-jwt.loc/api/profile",
+					"protocol": "https",
+					"host": [
+						"laravel-api-jwt",
+						"loc"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe1\",\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"password123\",\r\n    \"gender\": \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://laravel-api-jwt.loc/api/registration",
+					"protocol": "https",
+					"host": [
+						"laravel-api-jwt",
+						"loc"
+					],
+					"path": [
+						"api",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://laravel-api-jwt.loc/api/login",
+					"protocol": "https",
+					"host": [
+						"laravel-api-jwt",
+						"loc"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
